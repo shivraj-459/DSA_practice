@@ -131,7 +131,12 @@ public class MaxAreaRectangleBinaryMatrix {
 
     public static void main(String[] args) {
 
-        int[][] matrix={{0,1,1,0},{1,1,1,1},{1,1,1,1},{1,1,0,0}};
+        int[][] matrix={
+                {0,1,1,0},
+                {1,1,1,1},
+                {1,1,1,1},
+                {1,1,0,0}
+        };
 
        int row=matrix.length;
        int col=matrix[0].length;
