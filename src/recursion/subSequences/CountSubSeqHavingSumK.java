@@ -9,29 +9,23 @@ public class CountSubSeqHavingSumK {
 
         int[] arr={1,2,1};
         int k=2;
-        List<Integer> p=new ArrayList<>();
-
-        int output=countSubSeq(0,p,arr,k,0);
+        int output=countSubSeq(0,arr,k,0);
         System.out.println(output);
 
     }
 
-    public static int countSubSeq(int index, List<Integer> p,int[] up,int k,int sum){
+    public static int countSubSeq(int index,int[] up,int k,int sum){
 
         if(index>=up.length){
 
             if(sum==k){
-                System.out.println(p);
                 return 1;
             }
             return 0;
         }
 
-        p.add(up[index]);
-        int left=countSubSeq(index+1,p,up,k,sum + up[index]);
-        p.remove(p.size()-1);
-
-        int right=countSubSeq(index+1,p,up,k,sum);
+        int left=countSubSeq(index+1,up,k,sum + up[index]);
+        int right=countSubSeq(index+1,up,k,sum);
 
         return left + right;
     }
