@@ -7,7 +7,7 @@ public class Array {
     public static void main(String[] args) {
 
         int[] arr={1,2,3,4,10,8,9,2,20};
-        //System.out.println(FindSorted(arr,0));
+        System.out.println(FindSorted(arr,0));
 
         int target=2;
 //        System.out.println(checknum(arr,target,0));
@@ -26,7 +26,7 @@ public class Array {
 //        System.out.println(list1);
 
 
-        System.out.println(findIndexof(arr,target,0));
+        //System.out.println(findIndexof(arr,target,0));
     }
 
     static boolean FindSorted(int[] arr,int index){
