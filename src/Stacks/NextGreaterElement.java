@@ -29,7 +29,7 @@ public class NextGreaterElement {
                 vector.add(stack.peek());
             }
 
-            stack.add(arr[i]);
+            stack.push(arr[i]);
         }
 
 
