@@ -3,18 +3,18 @@ package SlidingWindow.variableSize;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LongestSubstringWithKUniqueChar {
+public class LongestSubstringWithAllUniqueChar {
 
     public static void main(String[] args) {
 
-        String str="aabacbebebe";
-        int k=2;
+        String str="pwwkefw";
 
-        int output=findLength(str,k);
+        int output=findLength(str);
         System.out.println(output);
+
     }
 
-    static int findLength(String str,int target){
+    static int findLength(String str){
 
         int s=0;
         int e=0;
@@ -26,20 +26,21 @@ public class LongestSubstringWithKUniqueChar {
 
             char ch=str.charAt(e);
 
-              if (map.containsKey(ch)) {
-                  map.put(ch, map.get(ch) + 1);
-              }
-              else {
-                  map.put(ch, 1);
-              }
-
-           if(map.size()==target){
-                max=Math.max(max,(e-s+1));
+            if(map.containsKey(ch)){
+                map.put(ch,map.get(ch)+ 1);
+            }
+            else{
+                map.put(ch,1);
             }
 
-            else if (map.size()>target) {
+            if(map.size()==(e-s + 1)){
+              max=Math.max(max,(e-s+1));
+            }
 
-                while(map.size()>target){
+            else if(map.size()<(e-s+1)){
+
+                while(map.size()<(e-s+1)){
+
                     map.put(str.charAt(s),map.get(str.charAt(s))-1);
 
                     if(map.get(str.charAt(s))==0){
