@@ -4,7 +4,7 @@ public class NumberOfRotations {
 
     public static void main(String[] args) {
 
-        int[] arr={3,1,1,3};
+        int[] arr={3 ,4, 7, 9, 1, 2};
 
         int output=pivot(arr);
 
