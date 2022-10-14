@@ -26,7 +26,7 @@ public class LongestSubArrayOfSumK {
             if(sum==target){
                 max=Math.max(max,(e-s+1));
             }
-            if(sum>target){
+           else if(sum>target){
                 while(sum>target) {
                     sum = sum - arr[s];
                     s++;
