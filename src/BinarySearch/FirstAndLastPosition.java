@@ -4,8 +4,8 @@ public class FirstAndLastPosition {
 
     public static void main(String[] args) {
 
-        int[] arr={};
-        int target=1;
+        int[] arr={1,2,2,2,3,3,4,5,6};
+        int target=2;
 
         int firstOutput=firstPosition(arr,target);
         int lastOutput=lastPosition(arr,target);

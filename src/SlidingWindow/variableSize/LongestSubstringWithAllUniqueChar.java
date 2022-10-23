@@ -7,7 +7,8 @@ public class LongestSubstringWithAllUniqueChar {
 
     public static void main(String[] args) {
 
-        String str="pwwkefw";
+        String str="abcabcbb";
+
 
         int output=findLength(str);
         System.out.println(output);

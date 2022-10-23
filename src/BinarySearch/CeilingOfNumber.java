@@ -5,7 +5,7 @@ public class CeilingOfNumber {  // flooring is also same like this the only chan
     public static void main(String[] args) {
 
         int[] arr={2,4,6,9,11,12,14,20,36,48};
-        int target=49;
+        int target=25;
 
         int output=findCeiling(arr,target);
 
