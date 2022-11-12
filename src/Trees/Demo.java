@@ -228,12 +228,12 @@ public class Demo {
         BinaryTree tr=new BinaryTree();
 
         Node root=tr.buildTree(nodes);
-//System.out.println(root);
+System.out.println(root);
         //preorder(root);
        //inorder(root);
         //postorder(root);
 
-        levelOrder(root);
+        //levelOrder(root);
 
 //       int count= countNodes(root);
 //
