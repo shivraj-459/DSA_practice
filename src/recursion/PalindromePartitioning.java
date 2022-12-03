@@ -1,7 +1,6 @@
 package recursion;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class PalindromePartitioning {
 
@@ -13,7 +12,6 @@ public class PalindromePartitioning {
 
         findPartitioning(0,str,p,ans);
         System.out.println(ans);
-
     }
 
     public static void findPartitioning(int index,String str,List<String> p,List<List<String>> ans){
